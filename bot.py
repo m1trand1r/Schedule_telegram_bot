@@ -69,14 +69,6 @@ def buttons_logic(message):
             items = choose_faculty()
             markup.add(*items)
             bot.send_message(message.chat.id, 'Выберете факультет', reply_markup=markup)
-        # elif message.text == 'Как дела?':
-        #
-        #     markup = types.InlineKeyboardMarkup(row_width=1)
-        #     item1 = types.InlineKeyboardButton("Хорошо", callback_data='good')
-        #     item2 = types.InlineKeyboardButton("Плохо", callback_data='bad')
-        #
-        #     markup.add(item1, item2)
-        #     bot.send_message(message.chat.id, 'Выберете ', reply_markup=markup)
         else:
             bot.send_message(message.chat.id, 'Я не знаю что ответить')
 
